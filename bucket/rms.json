@@ -6,7 +6,8 @@
     "architecture": {
         "64bit": {
             "url": "https://alist.khigh.top/d/Download/rms-startup/rms.zip",
-            "hash": "3e2afb93420b5f6ad4d9251daea55b11e48b9d978baa517dbd5878f99185b672"
+            "hash": "3e2afb93420b5f6ad4d9251daea55b11e48b9d978baa517dbd5878f99185b672",
+            "extract_dir": "rms"
         }
     },
     "depends": [
@@ -16,12 +17,6 @@
         "redis",
         "winsw"
     ],
-    "installer": {
-        "script": [
-            "Expand-Archive \"$dir\\rms.zip\" -DestinationPath \"$dir\"",
-            "Remove-Item \"$dir\\rms.zip\""
-        ]
-    },
     "post_install": [
         "# Generate Caddyfile and place it in the correct directory",
         "echo :8080 { > \"$dir\\Caddyfile\"",
