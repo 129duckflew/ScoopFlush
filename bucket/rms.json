@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://alist.khigh.top/d/Download/rms-startup/rms.zip",
-            "hash": "be857575541423813c5cc678e2fef918"
+            "hash": "md5:be857575541423813c5cc678e2fef918"
         }
     },
     "depends": [
