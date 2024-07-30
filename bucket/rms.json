@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://alist.khigh.top/d/Download/rms-startup/rms.zip",
-            "hash": "3e2afb93420b5f6ad4d9251daea55b11e48b9d978baa517dbd5878f99185b672",
+            "hash": "3a1519daf41e4931ea9b3d4f2dcbfdc00d6f396dd99902814e91d9c9c5f51882",
             "extract_dir": "rms"
         }
     },
@@ -37,7 +37,7 @@
 
         "shawl add --name caddy -- \"caddy run \"",
         "mysqld --install MySQL --defaults-file=\"$dir\\..\\..\\mysql-lts\\current\\my.ini\"",
-        "Move-Item -Path \"$dir\\redis.conf\" -Destination \"$dir\\..\\..\\redis\\current\\redis.conf\"",
+        "Move-Item -Path \"$dir\\redis.conf\" -Destination \"$dir\\..\\..\\redis\\current\\redis.conf\" -Force",
         "shawl add --name redis -- \"redis-server \"",
         "shawl add --name rms -- \"java -jar $dir\\rms-admin-1.0.jar --spring.profiles.active=prod\""
     ],
